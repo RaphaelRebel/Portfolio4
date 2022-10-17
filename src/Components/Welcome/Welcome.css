@@ -1,0 +1,4 @@
+.welcome__paragraph{
+    border-left: 3px solid var(--border);
+    padding: 1rem;
+}

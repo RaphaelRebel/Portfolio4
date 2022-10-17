@@ -1,0 +1,18 @@
+.nav{
+         margin: 2rem;
+         position: fixed;
+         
+}
+
+.nav__h3{
+         font-size: 2rem;
+         transition: all 0.2s;
+}
+
+.nav__h3:hover{
+         scale: 1.1;
+}
+
+.nav__h3 a{
+         text-decoration: none;
+}

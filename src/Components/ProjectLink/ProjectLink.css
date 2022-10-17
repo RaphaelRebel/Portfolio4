@@ -1,0 +1,12 @@
+.projectLink{
+         list-style: none;
+         border-bottom: 2px var(--border) solid;
+         width: fit-content;
+         transition: all 0.2s;
+         color: var(--fontMainColor)
+     }
+
+     .projectLink:hover{
+         scale: 1.1;
+     }
+
