@@ -1,7 +1,8 @@
 .nav{
          margin: 2rem;
          position: fixed;
-         
+         z-index: 100;
+         top: 5px;
 }
 
 .nav__h3{
@@ -16,3 +17,19 @@
 .nav__h3 a{
          text-decoration: none;
 }
+
+.nav__li{
+  color: #eee;
+  list-style: none;
+}
+
+
+@media screen and (max-width: 900px) {}
+
+
+@media screen and (max-width: 600px) {
+         .nav__h3{
+           font-size: 1.5rem;
+         }
+         
+       }

@@ -1,6 +1,5 @@
 .experience{
     width: 10wh;
-    height: 60vh;
     display: flex;
     flex-direction: column ;
     justify-content: space-between;
@@ -8,17 +7,20 @@
     
 }
 
+.experience__total{
 
+    padding: 0 0rem 0 10rem;
+}
 
 .experience__total h2{
     font-size: 6rem;
     border-bottom: var(--border) 2px solid;
     width: fit-content;
-    
+
 }
 
 .experience__total-p{
-    font-size: 150%;
+    
     width: 70%;
 }
 
@@ -33,12 +35,15 @@
 }
 
 .experience__allPart{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
+    /* background-color: #3f3f3f; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     transition: all 0.5s;
-    background-color: #3f3f3f;
-    margin: 2rem;
-    padding: 2rem;
+    margin: 0 10rem;
+    padding: 1rem;
+    /* max-height: 80rem;
+    overflow-y: scroll; */
 }
 

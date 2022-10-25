@@ -50,15 +50,15 @@ class Info extends React.Component{
             newPage = 
             <Project 
             title="ForFighters"
-            paragraphOne="Forfighters was een idee over een non-profit website voor mensen die geen sport kleding kunnen kopen." />;
+            paragraphOne="Forfighters was een idee over een non-profit website voor mensen die geen sport kleding kunnen kopen. Samen met een klasgenoot zijn we gaan werken aan dit project." paragraphTwo="Dit project was gebouwd in Laravel. Ik werkte aan de back-end van dit project. Ik moest een CMS (content managment system) bouwen zodat de opdrachtgever zelf zijn content kon plaatsen." />;
             state={state}
-        }else if (this.props.project === "Todo"){
+        }else if (this.props.project === "Reactomon"){
             this.state.state = !this.state.state
             let  state = this.state.state
             newPage = 
             <Project 
-            title="Todo"
-            paragraphOne="" 
+            title="Reactomon"
+            paragraphOne="Reactomon was gemaakt voor 1 van de opdrachten die we hadden gekregen voor de progammeer lessen. Het idee was dat we een gevecht systeem bouwen met ongeveer dezelfde functies als Pokemon." paragraphTwo="De app was gebouwd met ReactJS. Ik had veel geleerd en heb weer nieuwe goals ingesteld voor de toekomst. Ik wil meer weten over Javascript zodat ik deze app nog leuker kan maken." 
             state={state}/>;
         }else if(this.props.name === true){
             

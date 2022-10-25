@@ -1,0 +1,21 @@
+.mail{
+         margin: 5rem 10rem;
+         height: 10rem;
+         position: relative;
+}
+
+.mail__p{
+         height: auto;
+         position: relative;
+         margin-bottom: 4rem;
+}
+
+.mail__a{
+         background-color: #3f3f3f;
+         padding: 2rem;
+         margin-top: 2rem;
+         height: auto;
+         width: 100%;
+         position: relative;
+         font-size: 150%;
+}

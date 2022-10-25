@@ -1,8 +1,45 @@
 .section{
     min-height: 80vh;
     padding: 8rem;
+    margin: 0 0 4rem 0rem;
 }
 
 .section__header{
-    font-size: 8rem;
+    margin: 0 10rem;
 }
+
+@media screen and (max-width: 810px){
+    .section{
+        padding: 7rem;
+       }
+}
+
+@media screen and (max-width: 710px){
+   .section{
+    padding: 6rem;
+   }
+}
+
+@media screen and (max-width: 600px){
+    .section{
+     padding: 5rem;
+    }
+ }
+
+ @media screen and (max-width: 500px){
+    .section{
+     padding: 4rem;
+    }
+ }
+
+ @media screen and (max-width: 450px){
+    .section{
+     padding: 0 0rem 0 3rem;
+    }
+ }
+
+ @media screen and (max-width: 350px){
+    .section{
+        padding: 0 0rem 0 2rem;
+       }
+ }

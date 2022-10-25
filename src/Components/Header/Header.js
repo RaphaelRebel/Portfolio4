@@ -27,7 +27,7 @@ class Header extends React.Component {
                 name: "ForFighters",
             },
             {
-                name: "Todo",
+                name: "Reactomon",
             },
 
         ];

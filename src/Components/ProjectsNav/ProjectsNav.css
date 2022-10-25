@@ -1,14 +1,15 @@
 .projectsNav{
     height: 50vh;
-    width: 20vw;
-    padding: 2rem;
+    min-width: 20vw;
+    padding: 4rem;
+   
 }
 
 .projectsNav__ul{
     margin-top: 2rem;
     padding: 2rem;
-    border-top: var(--border) 3px solid;
-    border-left: var(--border) 3px solid;
+    /* border-top: var(--border) 3px solid;
+    border-left: var(--border) 3px solid; */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -20,4 +21,10 @@
 
 .projectLink{
     cursor: pointer;
+}
+
+@media screen and (min-width: 1000px){
+    .projectsNav{
+        background: linear-gradient(to left,   rgb(47, 47, 47, 0.6), 10%, rgb(31, 31, 31));
+    }
 }
