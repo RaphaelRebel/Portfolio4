@@ -3,39 +3,48 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100vw ;
-  position: relative;
+  
 }
 
 html{
   font-size: 62.5%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 200;
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 body{
   font-size: 1.6rem;
   min-height: 100vh;
   background-color: var(--mainBackground);
-  
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
+
 
 h1{
   font-size: 12rem;
   color: var(--fontMainColor);
+  text-decoration: underline;
+  text-decoration-color: var(--specialColor);
 }
 
 h2{
   color: var(--fontMainColor);
+  text-decoration: underline;
+  text-decoration-color: var(--specialColor);
 }
 
 h3{
   font-size: 4rem;
   color: var(--fontMainColor);
+  
 }
 
 p{
-  font-size: 140%;
+  font-size: 120%;
   color: var(--fontMainColor);
 }
 
@@ -43,12 +52,23 @@ a{
   color: var(--fontMainColor);
 }
 
+li{
+  color: var(--fontMainColor);
+  list-style-type: none;
+}
+
 :root{
   --mainBackground: #1f1f1f;
   --secondaryBackground: #2f2f2f;
   --fontMainColor: #eee;
+  --fontSecondaryColor: #c7c6c6;
   --border: grey;
+  --specialColor: #FF6D28;
 }
+
+
+
+
 
 @media screen and (min-width: 1165px) {
   h2{
@@ -64,7 +84,6 @@ a{
 
   h2{
     font-size: 8rem;
-    color: var(--fontMainColor);
   }
   
 }
@@ -76,7 +95,6 @@ a{
 
   h2{
     font-size: 7rem;
-    color: var(--fontMainColor);
   }
   
 }
@@ -88,7 +106,10 @@ a{
 
   h2{
     font-size: 6rem;
-    color: var(--fontMainColor);
+  }
+
+  h3{
+    font-size: 3rem;
   }
   
 }
@@ -102,6 +123,9 @@ a{
     font-size: 5rem;
     color: var(--fontMainColor);
   }
+  h3{
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -112,6 +136,10 @@ a{
   h2{
     font-size: 4rem;
     color: var(--fontMainColor);
+  }
+
+  h3{
+    font-size: 2rem;
   }
   
 }

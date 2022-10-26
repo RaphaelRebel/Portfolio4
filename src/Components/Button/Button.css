@@ -1,0 +1,12 @@
+.button{
+         padding: 0.5rem 1rem;
+         margin: 2rem;
+         background-color: var(--secondaryBackground);
+         border: none;
+         border-radius: 3rem;
+         
+}
+
+.button a{
+         text-decoration: none;
+}

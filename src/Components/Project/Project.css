@@ -3,5 +3,14 @@
     padding: 1rem;
 }
 
+.project__ul{
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+}
 
+.project__li{
+    color: var(--fontSecondaryColor);
+    list-style-type: none;
+}
 

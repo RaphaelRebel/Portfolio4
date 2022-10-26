@@ -1,6 +1,7 @@
 import "./ExperiencePart.css"
 // import {useEffect, useState} from 'react';
 
+
 const ExperiencePart = (props) => {
 
   // const [isClicked, setIsClicked] = useState(false)
@@ -13,8 +14,11 @@ const ExperiencePart = (props) => {
   // Code voor classname aan de div: className={`experience__part ${isClicked ? "experience__part-explain" : ""} `}
          return(
                   <div  className={`experience__part`}>
+                    <div>
+                    {props.icon}
                 <h3 className="experience__part-h3">{props.title}</h3>
-                    <p className="experience__part-subject">{props.subject}</p>
+                </div>
+                    <p className="  experience__part-subject">{props.subject}</p>
                 </div>
          )
 }

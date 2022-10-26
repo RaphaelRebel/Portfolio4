@@ -4,7 +4,7 @@ const ProjectLink = (props) => {
     return(
         <li className="projectLink">
            
-            {props.projectLink}
+          <a className="projectLink__a">  {props.projectLink}</a>
         </li>
     )
 }

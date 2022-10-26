@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import React from "react"
 
 
+
 class Header extends React.Component {
 
     constructor(props) {
@@ -22,12 +23,14 @@ class Header extends React.Component {
             {
                 name: "Fifty-ish",
             },
-
             {
                 name: "ForFighters",
             },
             {
                 name: "Reactomon",
+            },
+            {
+                name: "RaphaelRebel3",
             },
 
         ];
@@ -68,6 +71,7 @@ class Header extends React.Component {
                 <Info name={this.props.name} project={this.state.item} />
 
                 <ProjectsNav toBeRenderedprojectLinkItems={toBeRenderedprojectLinkItems2} projectLinkItems={this.projectLinkItems} />
+                
             </header>
         )
     }

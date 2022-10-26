@@ -23,8 +23,27 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 1000px){
-    .projectsNav{
-        background: linear-gradient(to left,   rgb(47, 47, 47, 0.6), 10%, rgb(31, 31, 31));
-    }
-}
+
+.projectsNav__ul li {
+    display: inline-block;
+    position: relative;
+    color: var(--specialColor);
+  }
+  
+  .projectsNav__ul li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--specialColor);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .projectsNav__ul li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

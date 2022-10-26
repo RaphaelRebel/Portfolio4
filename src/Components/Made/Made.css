@@ -1,0 +1,23 @@
+
+
+.made__p{
+         margin: 5rem 10rem;
+         width: 70%;
+}
+
+.madeWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5rem 10rem;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 900px){
+       
+     
+         .made__p{
+             padding: 0;
+             margin: 4rem;
+         }
+     }

@@ -1,12 +1,20 @@
 import "./Navigation.css"
+import {motion} from "framer-motion"
 
 const NavLinks = (props) => {
+
+         const animateFrom = {opacity: 0, x:200}
+    const animateTo = {opacity: 1, x: 0}
+         let update = () => {
+               return  props.isMobile && props.closeMobileMenu(), props.updated()
+         }
          return(
                  
-                  <ul className="nav__ul">
-                  <h3 onClick={props.updated()} className="nav__h3"> <a  href="/"> {props.name}</a></h3>
-                  <li className="nav__li">Gallerij</li>
-                           
+                  <ul   className="nav__ul navigation__links"  id="mobileNavigation">
+                 <motion.li initial={animateFrom} animate={animateTo} transition={{delay: 0.05}} onClick={ update} className="nav__li"> <h3  className="nav__h3"> <a  href="/"> {props.name}</a></h3></motion.li>
+                 <div className="nav__li-wrapper">
+                  <motion.li className="nav__li-pages nav__li" initial={animateFrom} animate={animateTo} transition={{delay: 0.05}} onClick={ update}  > <a target='_blank' href="https://github.com/RaphaelRebel/Portfolio4"> Github code</a></motion.li>
+                  </div>
                   </ul>
          
          )

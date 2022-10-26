@@ -1,10 +1,10 @@
 import NavLinks from "./NavLinks"
-import "./Navigatie.css"
+import "./Navigation.css"
 import {HiMenuAlt1} from "react-icons/hi"
 import { useState } from "react"
 import {IoIosCloseCircleOutline} from "react-icons/io"
 
-const MobileNavigation = () => {
+const MobileNavigation = (props) => {
 
   const  [open, setOpen] = useState(false);
 
@@ -16,11 +16,9 @@ const MobileNavigation = () => {
 
     return(
         <div className="mobileNavigation" >
-             <figure class="navigation__figure__mobile">
-        <i class="fa-solid fa-book-open-reader navigation__icon"></i>
-        </figure>
             {open ? closeIcon : hamburgerIcon}
-           { open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
+           { open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu}  updated={props.updated} name={props.name}/>}
+         
         </div>
     )
 }

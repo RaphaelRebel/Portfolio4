@@ -1,16 +1,18 @@
 .nav{
-         margin: 2rem;
          position: fixed;
          z-index: 100;
          top: 5px;
+         max-width: 100%;
+         height: 100%;
 }
 
 .nav__h3{
          font-size: 2rem;
          transition: all 0.2s;
+
 }
 
-.nav__h3:hover{
+.desktopNavigation .nav__li .nav__h3:hover{
          scale: 1.1;
 }
 
@@ -18,13 +20,111 @@
          text-decoration: none;
 }
 
-.nav__li{
+.nav__li a{
   color: #eee;
   list-style: none;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
 }
 
 
-@media screen and (max-width: 900px) {}
+.desktopNavigation{
+  width: fit-content;
+  margin: 1rem;
+  height: 100%;
+}
+
+.desktopNavigation  .nav__ul{
+  height: 100%;
+}
+
+
+
+.desktopNavigation .nav__li-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+.desktopNavigation .nav__li-wrapper .nav__li{
+  border-right: 3px solid var(--border);
+}
+
+.mobileNavigation{
+  display: none;
+}
+
+
+
+
+.nav__li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--specialColor);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav__li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
+  .nav{
+    position: relative;
+  }
+
+  .mobileNavigation{
+    display: initial;
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.7);
+  }
+
+  .nav__ul{
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .hamburger{
+    position: fixed;
+    right: 5;
+    margin: 0.5rem;
+  }
+
+
+  .desktopNavigation{
+    display: none;
+  }
+
+
+}
 
 
 @media screen and (max-width: 600px) {

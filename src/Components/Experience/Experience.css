@@ -47,3 +47,16 @@
     overflow-y: scroll; */
 }
 
+
+@media screen and (max-width: 900px){
+    .experience__total{
+
+        padding: 4rem;
+    }
+
+    .experience__allPart{
+        padding: 0;
+        margin: 4rem;
+    }
+}
+

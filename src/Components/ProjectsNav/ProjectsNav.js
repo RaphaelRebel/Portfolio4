@@ -7,7 +7,7 @@ const ProjectsNav = ({toBeRenderedprojectLinkItems}) => {
     return(
         
         <nav className="projectsNav">
-            <h3>Projects</h3>
+            <h3>Projecten</h3>
             <ul className="projectsNav__ul">
                 {toBeRenderedprojectLinkItems}
             </ul>

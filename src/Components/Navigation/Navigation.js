@@ -1,10 +1,12 @@
 import "./Navigation.css"
-import NavLinks from "./NavLinks"
+import DesktopNavigation from "./DesktopNavigation"
+import MobileNavigation from "./MobileNavigation"
 
 const Navigation = (props) => {
          return(
                   <nav className="nav">
-                       <NavLinks updated={props.updated()}/>
+                       <DesktopNavigation updated={props.updated} name={props.name}/>
+                       <MobileNavigation updated={props.updated} name={props.name}/>
                   </nav>
          )
 }

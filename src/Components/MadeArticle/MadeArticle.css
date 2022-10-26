@@ -1,0 +1,32 @@
+.madeArticle{
+         background-color: #2f2f2f;
+         box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+         height: 35vh;
+         max-width: 25rem;
+        border-radius: 1rem;
+}
+
+.madeArticle__top{
+         height: 30%;
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+        
+}
+
+.madeArticle__top h3{
+        color: var(--specialColor)
+}
+
+
+.madeArticle__bottom{
+         height: 70%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+}
+
+.madeArticle__bottom p{
+         width: 80%;
+}

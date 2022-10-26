@@ -2,6 +2,7 @@ import "./Project.css"
 import React from 'react'
 import {motion} from "framer-motion"
 import { render } from "@testing-library/react"
+import Button from "../Button/Button"
 
 class Project extends React.Component{
 
@@ -25,21 +26,38 @@ class Project extends React.Component{
     componentDidCatch(){
       
     }
+
     
     render(){
-     
+        
+       let github = null
+        if(this.props.name === 'Github'){
+            github = <Button name={this.props.name} link={this.props.link}/>
+        }
+
+        let site = null
+        if(this.props.website === 'Website'){
+            site = <Button name={this.props.website} link={this.props.site}/>
+        }
 
        
     return(
         <>
                
         <h2 className="project__title" >{this.props.title}</h2>
+        <ul className="project__ul">
+            {this.props.code.map(codes => (
+                <li className="project__li">{codes}</li>
+            ))}
+        </ul>
         <div className="project__paragraph">
             <p >{this.props.paragraphOne}</p>
             <br />
             <p >{this.props.paragraphTwo}</p>
+            
             </div>
-
+            {github}
+            {site}
         </>
     )}
 }
