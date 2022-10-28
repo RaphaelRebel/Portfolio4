@@ -3,7 +3,7 @@ import "./Info.css"
 import Project from "../Project/Project"
 import React from "react"
 
-import { AnimatePresence } from 'framer-motion/dist/framer-motion'
+
 
 class Info extends React.Component{
     
@@ -117,11 +117,11 @@ class Info extends React.Component{
     return(
         
         <section className="info">
-            <AnimatePresence>
+           
             
             {newPage}
         
-         </AnimatePresence>
+        
         </section>
        
     )}
