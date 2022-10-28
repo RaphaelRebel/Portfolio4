@@ -1,3 +1,3 @@
 # Raphael Rebel portfolio
 
-![Screenshot](/public/images/RaphaelRebel.jpg)
+![Screenshot](/public/images/RaphaelWebsite.png)
