@@ -1,6 +1,6 @@
 import "./ExperiencePart.css"
 // import {useEffect, useState} from 'react';
-
+import React from 'react'
 
 const ExperiencePart = (props) => {
 

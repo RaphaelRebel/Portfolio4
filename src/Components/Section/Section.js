@@ -1,4 +1,5 @@
 import "./Section.css"
+import React from 'react'
 
 const Section = (props) => {
     const hide = document.querySelectorAll(".section")

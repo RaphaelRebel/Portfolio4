@@ -3,7 +3,7 @@ import "./Info.css"
 import Project from "../Project/Project"
 import React from "react"
 
-import {AnimatePresence} from "framer-motion"
+import { AnimatePresence } from 'framer-motion/dist/framer-motion'
 
 class Info extends React.Component{
     
@@ -100,16 +100,22 @@ class Info extends React.Component{
             state={state}/>
         }
         else{
-            newPage =   <Welcome 
-            title="Welkom"
-            paragraphOne="Mijn naam is Raphael Rebel. Ik ben een full-stack webdeveloper. Mijn meeste ervaring ligt in Laravel, maar sinds kort ben ik ook begonnen aan ReactJS."
-            paragraphTwo="Ik ben altijd benieuwd naar nieuwe ideeën voor websites. Ik hou zowel van het stylen van een website, als de database in een website in elkaar zetten."
-             />
+            this.state.state = !this.state.state
+            let  state = this.state.state
+            newPage =     <Project 
+            title="Tekton" 
+            paragraphOne="Terug in 2021 was ik begonnen met het zoeken van opdrachten. Tekton was het eerste bedrijf waar ik naartoe ekon gaan om een website voor te bouwen. Dit was de start van mijn ZZP bedrijf genaamd 'Rebootz'. Ik heb veel geleerd over hoe ik om moet gaan met zaken."
+            paragraphTwo="Dit project was met Wordpress gemaakt. Ik begon meer op de front-end te focussen en het design, omdat dat natuurlijk ook gedaan moest worden. Ik kon eindelijk mijn schoolervaring overbrengen naar een zakelijk project."
+            state={state}
+            code={['Wordpress', 'Design']}
+            
+            />
              
         }
 
         
     return(
+        
         <section className="info">
             <AnimatePresence>
             
@@ -117,6 +123,7 @@ class Info extends React.Component{
         
          </AnimatePresence>
         </section>
+       
     )}
 }
 

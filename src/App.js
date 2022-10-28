@@ -8,6 +8,7 @@ import Mail from "./Components/Mail/Mail";
 import Footer from "./Components/Footer/Footer";
 import Made from "./Components/Made/Made";
 import { BsCaretDownSquare } from "react-icons/bs";
+import ProjectPage from "./Components/ProjectPage/ProjectPage";
 
 class App extends React.Component{
 
@@ -28,6 +29,9 @@ class App extends React.Component{
       
       <Navigation name={this.state.name} updated={updatedName}/> 
        <Header name={updatedName} />
+       <Section >
+        <ProjectPage />
+       </Section>
       <Section title="2,5 jaar ervaring in code"> 
          <Experience />
       </Section>

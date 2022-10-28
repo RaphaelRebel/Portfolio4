@@ -1,6 +1,36 @@
+.welcome{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+
 .welcome__paragraph{
     border-left: 3px solid var(--border);
     padding: 1rem;
+    width: 90%;
+}
+
+.welcome__img{
+    max-width: 50vh;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 1.5rem;
+}
+
+
+@media screen and (max-width: 900px){
+    .welcome{
+        flex-direction: column;
+        margin-left: 4rem;
+        width: 80%;
+    }
+
+    .welcome__img{
+        max-width: 35vh;
+    }
+    
 }
 
 

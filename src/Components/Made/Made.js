@@ -1,5 +1,6 @@
 import MadeArticle from '../MadeArticle/MadeArticle'
 import './Made.css'
+import React from 'react'
 
 
 const Made = () => {

@@ -30,3 +30,9 @@
 .madeArticle__bottom p{
          width: 80%;
 }
+
+@media screen and (max-width: 400px){
+        .madeArticle__bottom p{
+                font-size: 80%;
+       }
+}

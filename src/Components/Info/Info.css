@@ -1,8 +1,18 @@
 .info{
     width: 40vw;
     height: auto;
-    padding: 2rem 0rem 4rem 1rem;
+    padding: 0rem 0rem 4rem 1rem;
+    z-index: 1;
 }
+
+/* .img-wrapper{
+    width: 20vh;
+    height: 20vh;
+    
+    position: absolute;
+} */
+
+
 
 @media screen and (max-width: 900px) {
     .info{

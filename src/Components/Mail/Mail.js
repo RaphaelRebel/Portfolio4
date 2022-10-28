@@ -1,4 +1,5 @@
 import "./Mail.css"
+import React from 'react'
 
 const Mail = () => {
          return(

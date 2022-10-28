@@ -7,6 +7,7 @@ import {DiScrum} from "react-icons/di"
 import {DiPhp} from "react-icons/di"
 import {FaLaravel} from "react-icons/fa"
 import {DiReact} from "react-icons/di"
+import React from 'react'
 const Experience = () => {
 
     let html = <figure className="experience__figure"><AiFillHtml5 /></figure>
