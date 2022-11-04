@@ -19,8 +19,18 @@
     border-radius: 1.5rem;
 }
 
-
 @media screen and (max-width: 900px){
+    .welcome{
+        margin-left: 4rem;
+    }
+    .welcome__img{
+        max-width: 35vh;
+        margin: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
     .welcome{
         flex-direction: column;
         margin-left: 4rem;
@@ -29,6 +39,7 @@
 
     .welcome__img{
         max-width: 35vh;
+        margin-top: 10rem;
     }
     
 }

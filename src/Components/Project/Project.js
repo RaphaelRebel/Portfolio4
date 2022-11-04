@@ -39,7 +39,10 @@ class Project extends React.Component{
             site = <Button name={this.props.website} link={this.props.site}/>
         }
 
-       
+        let img = ""
+        if(this.props.img != null){
+         img = <img className="project__img" src={`/images/` + this.props.img} alt="Project" />
+        }
     return(
         <>
                
@@ -53,7 +56,7 @@ class Project extends React.Component{
             <p >{this.props.paragraphOne}</p>
             <br />
             <p >{this.props.paragraphTwo}</p>
-            
+            {img}
             </div>
             {github}
             {site}

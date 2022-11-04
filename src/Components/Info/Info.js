@@ -32,6 +32,7 @@ class Info extends React.Component{
             paragraphOne="Terug in 2021 was ik begonnen met het zoeken van opdrachten. Tekton was het eerste bedrijf waar ik naartoe ekon gaan om een website voor te bouwen. Dit was de start van mijn ZZP bedrijf genaamd 'Rebootz'. Ik heb veel geleerd over hoe ik om moet gaan met zaken."
             paragraphTwo="Dit project was met Wordpress gemaakt. Ik begon meer op de front-end te focussen en het design, omdat dat natuurlijk ook gedaan moest worden. Ik kon eindelijk mijn schoolervaring overbrengen naar een zakelijk project."
             state={state}
+            img='Tekton.png'
             code={['Wordpress', 'Design']}
             
             />
@@ -47,22 +48,10 @@ class Info extends React.Component{
             state={state}
             name='Github'
             link='https://github.com/Joeyvdkuijl/fifty-ish-project'
+            img='Fifty-ish.png'
             code={['Laravel', 'PHP', 'SCRUM', 'Back-end']}
             />;
-        } else if (this.props.project === "ForFighters"){
-            this.state.state = !this.state.state
-            let  state = this.state.state
-            newPage = 
-            <Project 
-            title="ForFighters"
-            paragraphOne="Forfighters was een idee over een non-profit website voor mensen die geen sport kleding kunnen kopen. Samen met een klasgenoot zijn we gaan werken aan dit project." paragraphTwo="Dit project was gebouwd in Laravel. Ik werkte aan de back-end van dit project. Ik moest een CMS (content managment system) bouwen zodat de opdrachtgever zelf zijn content kon plaatsen." 
-            state={state}
-            name='Github'
-            link="https://github.com/RaphaelRebel/ForFighters" 
-            code={['Laravel', 'PHP', 'Back-end']}
-            />
-            
-        }else if (this.props.project === "Reactomon"){
+        } else if (this.props.project === "Reactomon"){
             this.state.state = !this.state.state
             let  state = this.state.state
             newPage = 
@@ -72,6 +61,9 @@ class Info extends React.Component{
             state={state}
             name="Github"
             link="https://github.com/RaphaelRebel/F3M9reactomon"
+            website='Website'
+            site='https://reactomon-seven.vercel.app/'
+            img='Reactomon.png'
             code={['ReactJS', 'CSS']}
             />;
         }else if (this.props.project === "RaphaelRebel3"){
@@ -86,6 +78,7 @@ class Info extends React.Component{
             link="https://github.com/RaphaelRebel/F3M9reactomon"
             website='Website'
             site='http://22503.hosts1.ma-cloud.nl/raphaelrebel_2/'
+            img='RaphaelRebel3.png'
             code={['HTML', 'CSS', 'Javascript', 'Design' ]}
             />;
         }else if(this.props.name === true){
@@ -108,6 +101,7 @@ class Info extends React.Component{
             paragraphTwo="Dit project was met Wordpress gemaakt. Ik begon meer op de front-end te focussen en het design, omdat dat natuurlijk ook gedaan moest worden. Ik kon eindelijk mijn schoolervaring overbrengen naar een zakelijk project."
             state={state}
             code={['Wordpress', 'Design']}
+            img='Tekton.png'
             
             />
              

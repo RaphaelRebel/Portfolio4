@@ -13,7 +13,7 @@ const Welcome = (props) => {
                     <p >{props.paragraphTwo}</p>
                 </div>
             </div>
-            <img className='welcome__img' src={'/images/RaphaelRebel.jpg'} alt="Raphael Rebel" />
+            <img className='welcome__img' src={'/images/RaphaelRebel.webp'} alt="Raphael Rebel" />
         </section>
     )
 }

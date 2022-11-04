@@ -1,7 +1,6 @@
 .section{
     min-height: 80vh;
-    padding: 8rem;
-    margin: 0 0 4rem 0rem;
+    padding: 4rem;
     position: relative;
     
     /* transition: 150ms;

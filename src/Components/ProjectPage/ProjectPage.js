@@ -19,9 +19,6 @@ class ProjectPage extends React.Component {
                           name: "Fifty-ish",
                       },
                       {
-                          name: "ForFighters",
-                      },
-                      {
                           name: "Reactomon",
                       },
                       {
