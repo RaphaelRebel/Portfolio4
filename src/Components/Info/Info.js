@@ -32,7 +32,7 @@ class Info extends React.Component{
             paragraphOne="Terug in 2021 was ik begonnen met het zoeken van opdrachten. Tekton was het eerste bedrijf waar ik naartoe ekon gaan om een website voor te bouwen. Dit was de start van mijn ZZP bedrijf genaamd 'Rebootz'. Ik heb veel geleerd over hoe ik om moet gaan met zaken."
             paragraphTwo="Dit project was met Wordpress gemaakt. Ik begon meer op de front-end te focussen en het design, omdat dat natuurlijk ook gedaan moest worden. Ik kon eindelijk mijn schoolervaring overbrengen naar een zakelijk project."
             state={state}
-            img='Tekton.png'
+            img='Tekton.webp'
             code={['Wordpress', 'Design']}
             
             />
@@ -48,7 +48,7 @@ class Info extends React.Component{
             state={state}
             name='Github'
             link='https://github.com/Joeyvdkuijl/fifty-ish-project'
-            img='Fifty-ish.png'
+            img='Fifty-ish.webp'
             code={['Laravel', 'PHP', 'SCRUM', 'Back-end']}
             />;
         } else if (this.props.project === "Reactomon"){
@@ -63,7 +63,7 @@ class Info extends React.Component{
             link="https://github.com/RaphaelRebel/F3M9reactomon"
             website='Website'
             site='https://reactomon-seven.vercel.app/'
-            img='Reactomon.png'
+            img='Reactomon.webp'
             code={['ReactJS', 'CSS']}
             />;
         }else if (this.props.project === "RaphaelRebel3"){
@@ -78,7 +78,7 @@ class Info extends React.Component{
             link="https://github.com/RaphaelRebel/F3M9reactomon"
             website='Website'
             site='http://22503.hosts1.ma-cloud.nl/raphaelrebel_2/'
-            img='RaphaelRebel3.png'
+            img='RaphaelRebel3.webp'
             code={['HTML', 'CSS', 'Javascript', 'Design' ]}
             />;
         }else if(this.props.name === true){
@@ -101,7 +101,7 @@ class Info extends React.Component{
             paragraphTwo="Dit project was met Wordpress gemaakt. Ik begon meer op de front-end te focussen en het design, omdat dat natuurlijk ook gedaan moest worden. Ik kon eindelijk mijn schoolervaring overbrengen naar een zakelijk project."
             state={state}
             code={['Wordpress', 'Design']}
-            img='Tekton.png'
+            img='Tekton.webp'
             
             />
              

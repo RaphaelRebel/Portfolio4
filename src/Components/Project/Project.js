@@ -45,7 +45,7 @@ class Project extends React.Component{
         }
     return(
         <>
-               
+          <div className="project__wrapper">     
         <h2 className="project__title" >{this.props.title}</h2>
         <ul className="project__ul">
             {this.props.code.map(codes => (
@@ -56,8 +56,9 @@ class Project extends React.Component{
             <p >{this.props.paragraphOne}</p>
             <br />
             <p >{this.props.paragraphTwo}</p>
-            {img}
             </div>
+            </div>
+            {img}
             {github}
             {site}
         </>

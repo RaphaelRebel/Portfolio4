@@ -8,6 +8,9 @@
     transform: translateX(100px); */
 }
 
+.section:has(.project){
+    padding: 0;
+}
 
 .section__header{
     margin: 0 10rem;

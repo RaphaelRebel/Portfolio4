@@ -13,13 +13,13 @@ class ProjectPage extends React.Component {
               componentDidMount() {
                   let projectLinkItems = [
                       {
+                          name: "Reactomon",
+                      },
+                      {
                           name: "Tekton",
                       },
                       {
                           name: "Fifty-ish",
-                      },
-                      {
-                          name: "Reactomon",
                       },
                       {
                           name: "RaphaelRebel3",

@@ -1,7 +1,6 @@
 .projectsNav{
-    height: 50vh;
     min-width: 20vw;
-    padding: 4rem;
+    padding: 8rem;
     
 }
 
@@ -46,4 +45,22 @@
   .projectsNav__ul li:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  @media screen and (max-width: 1100px){
+    .projectsNav{
+      margin-left: 6rem
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    .projectsNav{
+      margin-left: 0;
+      padding: 0;
+      margin-left: 4rem;
+    }
+  }
+
+  .projectNav{
+    max-height: 30rem;
   }
