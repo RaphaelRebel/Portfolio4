@@ -59,8 +59,11 @@ class Project extends React.Component{
             </div>
             </div>
             {img}
+            <div>
             {github}
             {site}
+            </div>
+
         </>
     )}
 }
