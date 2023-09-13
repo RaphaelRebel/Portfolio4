@@ -9,6 +9,9 @@ import Footer from "./Components/Footer/Footer";
 import Made from "./Components/Made/Made";
 import { BsCaretDownSquare } from "react-icons/bs";
 import ProjectPage from "./Components/ProjectPage/ProjectPage";
+import RedBar from "./Components/RedBar/RedBar";
+import TextSlide from "./Components/TextSlide/TextSlide";
+import Intro from "./Components/Intro/Intro";
 
 class App extends React.Component{
 
@@ -18,17 +21,32 @@ class App extends React.Component{
   }
 
   
+
+  
   render(){
    let updatedName = () => {
       return  'test'
     }
 
+    const textSlideArray = [
+      "Full-stack",
+      "Web-development"
+  ]
   
+  const textSlideToBeRendered = textSlideArray.map(textSlide => {
+   return( <TextSlide key={textSlide} TextSlide={textSlide} /> )
+  })
   return (
     <div className="App">
-      
-      <Navigation name={this.state.name} updated={updatedName}/> 
-       <Header name={updatedName} />
+      <RedBar />
+      {/* <Navigation name={this.state.name} updated={updatedName}/>  */}
+      <Section>
+        <Intro title={this.state.name} />
+      </Section>
+      <Section>
+    {textSlideToBeRendered}
+      </Section>
+       {/* <Header name={updatedName} /> */}
        <Section >
         <ProjectPage />
        </Section>

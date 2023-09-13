@@ -6,7 +6,7 @@ const Welcome = (props) => {
     return(
         <section className='welcome'>
             <div>
-                <h1 >{props.title}</h1>
+                <h2 >{props.title}</h2>
                 <div className="welcome__paragraph">
                     <p >{props.paragraphOne}</p>
                     <br />

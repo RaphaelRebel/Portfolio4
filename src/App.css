@@ -1,12 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100vw ;
-  
+  max-width: 100vw;
+
 }
 
-html{
+html {
   font-size: 62.5%;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 200;
@@ -14,7 +14,7 @@ html{
   width: 100vw;
 }
 
-body{
+body {
   font-size: 1.6rem;
   min-height: 100vh;
   background-color: var(--mainBackground);
@@ -24,40 +24,46 @@ body{
 }
 
 
-h1{
+h1 {
   font-size: 12rem;
   color: var(--fontMainColor);
-  text-decoration: underline;
-  text-decoration-color: var(--specialColor);
 }
 
-h2{
+h1:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px;
+}
+
+h2 {
   color: var(--fontMainColor);
   text-decoration: underline;
   text-decoration-color: var(--specialColor);
 }
 
-h3{
+h3 {
   font-size: 4rem;
   color: var(--fontMainColor);
-  
+
 }
 
-p{
+p {
   font-size: 120%;
   color: var(--fontMainColor);
 }
 
-a{
+a {
   color: var(--fontMainColor);
 }
 
-li{
+li {
   color: var(--fontMainColor);
   list-style-type: none;
 }
 
-:root{
+:root {
   --mainBackground: #1f1f1f;
   --secondaryBackground: #2f2f2f;
   --fontMainColor: #eee;
@@ -71,75 +77,76 @@ li{
 
 
 @media screen and (min-width: 1165px) {
-  h2{
+  h2 {
     font-size: 9rem;
   }
 }
 
 
 @media screen and (max-width: 1165px) {
-  h1{
+  h1 {
     font-size: 11rem;
   }
 
-  h2{
+  h2 {
     font-size: 8rem;
   }
-  
+
 }
 
 @media screen and (max-width: 1005px) {
-  h1{
+  h1 {
     font-size: 10rem;
   }
 
-  h2{
+  h2 {
     font-size: 7rem;
   }
-  
+
 }
 
 @media screen and (max-width: 700px) {
-  h1{
+  h1 {
     font-size: 8rem;
   }
 
-  h2{
+  h2 {
     font-size: 6rem;
   }
 
-  h3{
+  h3 {
     font-size: 3rem;
   }
-  
+
 }
 
 @media screen and (max-width: 600px) {
-  h1{
+  h1 {
     font-size: 7rem;
   }
-  
-  h2{
+
+  h2 {
     font-size: 5rem;
     color: var(--fontMainColor);
   }
-  h3{
+
+  h3 {
     font-size: 3rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  h1{
+  h1 {
     font-size: 5rem;
   }
 
-  h2{
+  h2 {
     font-size: 4rem;
     color: var(--fontMainColor);
   }
 
-  h3{
+  h3 {
     font-size: 2rem;
   }
-  
+
 }

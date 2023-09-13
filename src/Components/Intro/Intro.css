@@ -1,0 +1,30 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro_title{
+    display: flex;
+}
+
+.intro_h1{
+    color: white;
+    font-size: 500%;
+}
+
+.intro_amsterdam{
+    margin-left: 14rem;
+    object-fit:cover;
+    height: 50vh;
+    width: max-content;
+    box-shadow: 80px 20px 15px 5px rgba(0,0,0,0.4);
+    transform: rotateX(-70deg) rotateZ(60deg) translate3d(-120px, 0px, 70px);
+}
+
+@media screen and (max-width: 900px){
+    .intro_h1{
+        color: white;
+        font-size: 300%;
+    }
+}
+
