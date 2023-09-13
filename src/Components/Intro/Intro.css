@@ -13,18 +13,38 @@
 }
 
 .intro_amsterdam{
-    margin-left: 14rem;
-    object-fit:cover;
-    height: 50vh;
-    width: max-content;
-    box-shadow: 80px 20px 15px 5px rgba(0,0,0,0.4);
+    margin-left: 22rem;
     transform: rotateX(-70deg) rotateZ(60deg) translate3d(-120px, 0px, 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_amsterdam>p{
+    font-size: 200%;
+    z-index: 1;  
+    
+}
+
+.intro_amsterdam-img{
+    object-fit:cover;
+    max-height: 90vh;
+    width: max-content;
+    border-radius: 18px;
+    background-color: rgb(47, 47, 47, 0.1);
+    /*  */
+
 }
 
 @media screen and (max-width: 900px){
     .intro_h1{
         color: white;
         font-size: 300%;
+    }
+
+    .intro_amsterdam{
+        height: 50vh;
     }
 }
 

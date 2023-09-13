@@ -63,7 +63,7 @@ const Intro = (props) => {
     const map = {
         visible: {
             opacity: 1,
-            boxShadow: "80px 20px 15px 5px rgba(0,0,0,0.4)"
+            boxShadow: "80px -30px 15px 5px rgba(0,0,0,0.4)"
         },
 
         hidden: {
@@ -82,17 +82,20 @@ const Intro = (props) => {
                     )
                     }
                 </div>
-                <div style={{display: "flex"}}>
-                {subTitle.map((word, index) => 
-                <motion.p variants={subChild} style={{ marginRight: "0.1vw" }} key={index}>{word}</motion.p>
-                )}
-                </div>
 
-                <motion.img
-                    className='intro_amsterdam' src={'/images/Amterdam_Centrum_White_A4.png'} alt="Raphael Rebel"
-                    variants={map}
-                    transition={{duration: 2}}
-                />
+                <div className="intro_amsterdam">
+                    <div style={{ display: "flex" }}>
+                        {subTitle.map((word, index) =>
+                            <motion.p variants={subChild} style={{ marginRight: "0.1vw", fontSize: 34 }} key={index}>{word}</motion.p>
+                        )}
+                    </div>
+
+                    <motion.img
+                        className='intro_amsterdam-img' src={'/images/Amterdam_Centrum_White_A4.png'} alt="Raphael Rebel"
+                        variants={map}
+                        transition={{ duration: 2 }}
+                    />
+                </div>
 
             </div>
             <motion.img
