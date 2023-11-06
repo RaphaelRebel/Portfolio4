@@ -90,7 +90,7 @@
   }
 
   .welcome__img {
-    min-width: 70vw;
+    min-width: 7rem;
   }
 }
 
@@ -101,6 +101,10 @@
 
   .intro_amsterdam {
     display: none;
+  }
+
+  .welcome__img{
+    min-width:90%;
   }
 
   .intro_amsterdam-img {
