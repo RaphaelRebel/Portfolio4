@@ -1,4 +1,4 @@
-import Welcome from "../Welcome/Welcome"
+
 import "./Info.css"
 import Project from "../Project/Project"
 import React from "react"
@@ -81,16 +81,6 @@ class Info extends React.Component{
             img='RaphaelRebel3.webp'
             code={['HTML', 'CSS', 'Javascript', 'Design' ]}
             />;
-        }else if(this.props.name === true){
-            
-            this.state.state = !this.state.state
-            let  state = this.state.state
-            newPage =   <Welcome 
-            title="Welkom"
-            paragraphOne="Mijn naam is Raphael Rebel. Ik ben een full-stack webdeveloper. Mijn meeste ervaring ligt in Laravel, maar sinds kort ben ik ook begonnen aan ReactJS."
-            paragraphTwo="Ik ben altijd benieuwd naar nieuwe ideeën voor websites. Ik hou zowel van het stylen van een website, als de database in een website in elkaar zetten."
-            
-            state={state}/>
         }
         else{
             this.state.state = !this.state.state

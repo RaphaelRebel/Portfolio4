@@ -13,8 +13,8 @@
   margin-top: 15vh;
     height: 35vh;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
   }
   
   section div {

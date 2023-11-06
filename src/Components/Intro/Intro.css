@@ -1,50 +1,119 @@
-.intro{
-    display: flex;
-    flex-direction: column;
+.intro {
+  display: flex;
+  flex-direction: column;
 }
 
-.intro_title{
-    display: flex;
+.intro_title {
+  display: flex;
 }
 
-.intro_h1{
-    color: white;
-    font-size: 500%;
+.intro_h1 {
+  color: white;
+  font-size: 500%;
+  font-weight: bold;
+  transition: all 0.45s ease;
+  cursor: default;
 }
 
-.intro_amsterdam{
-    margin-left: 22rem;
-    transform: rotateX(-70deg) rotateZ(60deg) translate3d(-120px, 0px, 70px);
-    display: flex;
+.intro_h1:hover:nth-child(even) {
+  color: #f1f1f1;
+  transition: all 0.45s ease;
+  cursor: default;
+}
+
+.intro_h1:hover:nth-child(even) {
+  transform: rotate(30deg);
+}
+
+.intro_h1:hover:nth-child(odd) {
+  transform: rotate(-30deg);
+}
+
+.intro_amsterdam {
+  margin-left: 22rem;
+  transform: rotateX(-70deg) rotateZ(60deg) translate3d(-120px, 0px, 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro_amsterdam > div > p {
+  transition: all 0.45s ease;
+  cursor: default;
+}
+
+.intro_amsterdam > div > p:hover {
+  transition: all 0.45s ease;
+  color: rgb(130, 130, 133);
+  cursor: default;
+}
+
+.intro_amsterdam > p {
+  font-size: 200%;
+  z-index: 1;
+}
+
+.welcome__img {
+  max-width: 50vw;
+  max-height: 50vh;
+  margin: 20vh auto;
+  /* box-shadow: 2rem 2rem 0.5rem rgba(0,0,0,0.5); */
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.intro_amsterdam-img {
+  object-fit: cover;
+  max-height: 70vh;
+  width: max-content;
+  border-radius: 18px;
+  /* background: linear-gradient(to bottom left, rgb(47, 47, 47), rgba(44, 44, 44, 0.9)); */
+  /*  */
+}
+
+.intro_container{
+  overflow: hidden;
+  display: flex;
+  padding: 20;
+}
+
+@media screen and (max-width: 1400px) {
+  .intro_amsterdam {
+    display: none;
+  }
+
+  .intro_container{
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+  align-items: center;
+  }
+
+  .welcome__img {
+    min-width: 70vw;
+  }
 }
 
-.intro_amsterdam>p{
+@media screen and (max-width: 900px) {
+  .intro_h1 {
+    font-size: 300%;
+  }
+
+  .intro_amsterdam {
+    display: none;
+  }
+
+  .intro_amsterdam-img {
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .intro_amsterdam-img {
+    height: 30vw;
+  }
+
+  .intro_h1 {
     font-size: 200%;
-    z-index: 1;  
-    
+  }
 }
-
-.intro_amsterdam-img{
-    object-fit:cover;
-    max-height: 90vh;
-    width: max-content;
-    border-radius: 18px;
-    background-color: rgb(47, 47, 47, 0.1);
-    /*  */
-
-}
-
-@media screen and (max-width: 900px){
-    .intro_h1{
-        color: white;
-        font-size: 300%;
-    }
-
-    .intro_amsterdam{
-        height: 50vh;
-    }
-}
-

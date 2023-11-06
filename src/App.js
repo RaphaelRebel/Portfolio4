@@ -1,6 +1,6 @@
-import Header from "./Components/Header/Header"
+
 import './App.css';
-import React from 'react'
+import React, { Suspense } from 'react'
 import Experience from "./Components/Experience/Experience";
 import Section from "./Components/Section/Section";
 import Navigation from "./Components/Navigation/Navigation";
@@ -12,6 +12,7 @@ import ProjectPage from "./Components/ProjectPage/ProjectPage";
 import RedBar from "./Components/RedBar/RedBar";
 import TextSlide from "./Components/TextSlide/TextSlide";
 import Intro from "./Components/Intro/Intro";
+import SectionAnimated from './Components/SectionAnimated/SectionAnimated';
 
 class App extends React.Component{
 
@@ -38,6 +39,7 @@ class App extends React.Component{
   })
   return (
     <div className="App">
+      {/* <Suspense fallback="loading"></Suspense> */}
       <RedBar />
       {/* <Navigation name={this.state.name} updated={updatedName}/>  */}
       <Section>
@@ -47,20 +49,20 @@ class App extends React.Component{
     {textSlideToBeRendered}
       </Section>
        {/* <Header name={updatedName} /> */}
-       <Section >
+       <SectionAnimated >
         <ProjectPage />
-       </Section>
-      <Section title="2,5 jaar ervaring in code"> 
+       </SectionAnimated>
+      <SectionAnimated title="2,5 jaar ervaring in code"> 
          <Experience />
-      </Section>
+      </SectionAnimated>
 
-      <Section title="Hoe is deze website gemaakt?" >
+      <SectionAnimated title="Hoe is deze website gemaakt?" >
         <Made />
-      </Section>
+      </SectionAnimated>
 
-      <Section title="Contact">
+      <SectionAnimated title="Contact">
         <Mail />
-      </Section>
+      </SectionAnimated>
       <Footer />
     </div>
   );}

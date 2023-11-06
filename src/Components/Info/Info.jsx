@@ -1,4 +1,4 @@
-import Welcome from "../Welcome/Welcome"
+
 import "./Info.css"
 import Project from "../Project/Project"
 import React from "react"

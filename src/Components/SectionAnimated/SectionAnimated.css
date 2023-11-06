@@ -1,0 +1,31 @@
+.SectionAnimated{
+    min-height: 80vh;
+    padding: 5rem;
+    position: relative;
+    
+    /* transition: 150ms;
+    opacity: 0;
+    transform: translateX(100px); */
+}
+
+.SectionAnimated:has(.project){
+    padding: 0;
+}
+
+.SectionAnimated__header{
+    margin: 0 10rem;
+}
+.show{
+  opacity: 1 ;
+  transform: translateX(0) ;
+}
+
+@media screen and (max-width: 900px){
+    .SectionAnimated{
+        padding: 0rem;
+       }
+
+       .SectionAnimated__header{
+        margin: 4rem;
+    }
+}

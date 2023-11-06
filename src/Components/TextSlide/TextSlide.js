@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { motion, useScroll, useTransform, cubicBezier, circOut, useMotionValue, useMotionValueEvent, Variants, easeIn, transform } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionValueEvent} from "framer-motion";
 import "./TextSlide.css";
 // #F0F0F0
 // #213555
