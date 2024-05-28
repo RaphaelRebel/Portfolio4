@@ -34,6 +34,8 @@ class App extends React.Component{
       "Web-development"
   ]
   
+  const timeCode = new Date().getFullYear() - 2020;
+
   const textSlideToBeRendered = textSlideArray.map(textSlide => {
    return( <TextSlide key={textSlide} TextSlide={textSlide} /> )
   })
@@ -52,13 +54,13 @@ class App extends React.Component{
        <SectionAnimated >
         <ProjectPage />
        </SectionAnimated>
-      <SectionAnimated title="2,5 jaar ervaring in code"> 
+      <SectionAnimated title={`${timeCode} jaar ervaring in code`}> 
          <Experience />
       </SectionAnimated>
-
+{/* 
       <SectionAnimated title="Hoe is deze website gemaakt?" >
         <Made />
-      </SectionAnimated>
+      </SectionAnimated> */}
 
       <SectionAnimated title="Contact">
         <Mail />
